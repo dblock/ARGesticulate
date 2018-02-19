@@ -1,0 +1,6 @@
+framework module Pods_ARGesticulate_Tests {
+  umbrella header "Pods-ARGesticulate_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

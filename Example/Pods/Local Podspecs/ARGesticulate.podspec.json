@@ -1,0 +1,22 @@
+{
+  "name": "ARGesticulate",
+  "version": "0.1.0",
+  "summary": "A short description of ARGesticulate.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/fdb0a86461be54d315b0ece8c92b75c3da955c5f/ARGesticulate",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "fdb0a86461be54d315b0ece8c92b75c3da955c5f": "dblock@dblock.org"
+  },
+  "source": {
+    "git": "https://github.com/fdb0a86461be54d315b0ece8c92b75c3da955c5f/ARGesticulate.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ARGesticulate/Classes/**/*"
+}

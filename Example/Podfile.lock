@@ -1,0 +1,22 @@
+PODS:
+  - ARGesticulate (0.1.0)
+  - Expecta (1.0.6)
+  - Specta (1.0.7)
+
+DEPENDENCIES:
+  - ARGesticulate (from `../`)
+  - Expecta
+  - Specta
+
+EXTERNAL SOURCES:
+  ARGesticulate:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ARGesticulate: c6f31020f834bcc69d9b67f27800e39306a7a16e
+  Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
+  Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
+
+PODFILE CHECKSUM: 62f6a1d4dd840d6edbf6db3a085751930ffed7d6
+
+COCOAPODS: 1.4.0

@@ -7,7 +7,8 @@
 //
 
 @import UIKit;
+@import ARKit;
 
 @interface ARViewController : UIViewController
-
+@property (nonatomic, strong, readonly) IBOutlet ARSCNView *sceneView;
 @end

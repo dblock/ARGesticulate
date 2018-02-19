@@ -7,17 +7,41 @@
 //
 
 #import "ARViewController.h"
+@import ARGesticulate;
 
-@interface ARViewController ()
-
+@interface ARViewController () <Gesticulates>
+@property (nonatomic, strong, nullable) SCNNode *plane;
 @end
 
 @implementation ARViewController
 
+- (void) gesticulator:(NSObject<CapturesGesticulations> *)gesticulator hasGesticulated:(Gesticulation *)gesticulation
+{
+    NSLog(@"Gesticulated!");
+}
+
 - (void)viewDidLoad
 {
+    self.view.backgroundColor = UIColor.whiteColor;
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.sceneView.frame = self.view.frame;
+    [self.view addSubview:self.sceneView];
+    
+    // Set the view's delegate
+    self.sceneView.delegate = self;
+    
+    // Show statistics such as fps and timing information
+    self.sceneView.showsStatistics = YES;
+    
+    // Create a new scene
+    SCNScene *scene = [[SCNScene alloc] init];
+    self.sceneView.debugOptions = ARSCNDebugOptionShowWorldOrigin | ARSCNDebugOptionShowFeaturePoints;
+   
+    self.sceneView.scene = scene;
+    
+    ARCapturesAugmentedReality * ar = [[ARCapturesAugmentedReality alloc] initWithSession:self.sceneView.session];
+    [ar capture];
 }
 
 - (void)didReceiveMemoryWarning
